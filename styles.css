@@ -1,0 +1,63 @@
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #67BBE7;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.card {
+  background: #fdfdfd;
+  border-radius: 4px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+@media only screen and (min-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+img.birthday {
+  max-height: 40vh;
+}
+.text {
+  padding: 1em;
+}
+.muted {
+  opacity: 0.8;
+}
+.headtext {
+  font-family: 'Permanent Marker', cursive;
+}
+.bodytext{
+  font-family: 'Sevillana', cursive;
+}
+.space {
+  height: 100px;
+}
